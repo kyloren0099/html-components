@@ -6,36 +6,51 @@
 </head>
 <body>
     <form method="GET">
-    
+    <!--
+        Makes a text box for users to imput the following information
+    -->
     <label for="address">Address:</label>
     <input type="text" name="address" placeholder="Please enter your Address." size="30" maxlength="100" id="address"/>
     
-    <label for="Postal-code"><br/><br/>Postal code:</label>
+    <label for="Postal-code"><br/><br/><b>postal code:</b></label>
     <input type="text" name="Postal-code" placeholder="Please enter your Postal code." size="30" maxlength="100" id="Postal code"/>
     
     <label for="City"><br/><br/>City:</label>
     <input type="text" name="City" placeholder="Please enter your city." size="30" maxlength="100" id="City"/>
 
-    <label for="Shipping"><br/><br/>Type of shipping You would like:</label>
+    <label for="Shipping"><br/><br/><i>Type of shipping You would like:</i></label>
     <Select name="Shipping" id="Shipping">
+        <!--
+        Adds a drop down bar to the website with the following values
+        -->
         <option value="Standard-shipping">Standard shipping </option>
         <option value="One-Day-Shipping"> One-Day Shipping </option>
         <option value="Two-Day-Shipping"> Two-Day Shipping </option>
     </Select>
     <p>
+        <!--
+        Adds a drop down bar to the website with the following values
+        -->
         <label><input type="radio" name="Payment-method" value="Credit-Card">Credit-Card</label>   
         <label><input type="radio" name="Payment-method" value="Paypal" checked>Paypal</label>
         <label><input type="radio" name="Payment-method" value="Debit-Card">Debit-Card</label>
     </p>
-    
-    <label for="Comments">Comments<br/></label>
+    <!--
+        Adds a text box for users to add comments
+    -->
+    <label for="Comments"><u>Comments</u><br/></label>
     <textarea id="Comments" name="Comments" rows="4" cols="40"></textarea>
     <label> 
+        <!--
+        Makes a checkbox to click on
+        -->
         <input type="checkbox"name="Sign-me-up-for-email-updates" checked> Sign me up for email updates
-        <input type="checkbox" name="Save-my-payment-information" checked> <br/>
-    </label>Save my payment information
-    <label for="Submit"></label>
-    <input type="submit" name="Submit" id="Submit">
+        <input type="checkbox" name="Save-my-payment-information" checked>Save my payment information
+        <!--
+            Adds a submit button to click on
+        -->
+        <label for="Submit"></label>
+        <input type="submit" name="Submit" id="Submit">
 
 
 
